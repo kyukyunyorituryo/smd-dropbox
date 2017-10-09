@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- APIの取り込み -->
+  <script src="https://www.dropbox.com/static/api/dropbox-datastores-1.0-latest.js"></script>
+  <script src="mymemo.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <title>My Memo</title>
+  <style> button   { width: 200px; font-size: 24px; } 
+          textarea { font-size: 24px; width: 300px; } 
+  </style>
+</head>
+<body style="background-color:#f0f0ff;">
+<!-- Dropboxとのリンクボタン -->
+<div id="link">
+  <button id="link_btn">Link to Dropbox</button>
+</div>
+<!-- メインコンテンツ -->
+<div id="main">
+  <p>メモ:<br>
+  <textarea id="memo" rows="7" cols="30">[読込中]</textarea></p>
+  <p><button id="save_btn">保存</button></p>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <button onclick="signOut()">リンク解除</button>
+</div>
+</body>
+</html>
